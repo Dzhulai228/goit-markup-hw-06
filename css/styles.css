@@ -885,20 +885,21 @@ header{
  .header-navigation {    /* <----------- */
     display: none;
   }
-  .tab-norm-header {
-    display: flex;
-    padding: 14px 0;
-  }
+ 
+/*   
   .current::after {
     display: block;
   }
+
   .header-adress-item {
     width: 119px;
     height: 14px;
   }
+
   .header-adress-item-mail {
     margin-bottom: 12px;
   }
+  
   .adress-list {
     display: block;
   }
@@ -938,7 +939,7 @@ header{
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.07; /* 107.143% */
+    line-height: 1.07; 
     letter-spacing: 0.02em;
     width: 496px;
     height: 120px;
@@ -1033,7 +1034,7 @@ header{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5; 
     letter-spacing: 0.02em;
   }
   .header-adress-item-mail {
@@ -1121,4 +1122,4 @@ header{
   .modal {
     padding: 72px 24px 24px 24px;
   }
-}
+} */
