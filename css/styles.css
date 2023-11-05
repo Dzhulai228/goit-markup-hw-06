@@ -85,13 +85,6 @@ header{
     display: flex;
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-  }
-
   nav{
     display: flex; 
     align-items: center;
@@ -243,6 +236,16 @@ header{
 
 }
 
+.container {
+    /* width: 1158px; */
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+  }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -269,11 +272,14 @@ header{
 
 .benefits-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .benefits-item {
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
+    width: 100%;
+    position: relative;
 }
 
 .section-two-titles-features{
@@ -283,7 +289,6 @@ header{
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-
 }
 
 .section-two-paragraph-features {
@@ -852,6 +857,71 @@ header{
     margin: 0 auto;
 
 }
+
+/* ======================== MEDIA ======================== */
+/* ------------------------------------------------------- */
+/* ======================== MEDIA ======================== */
+
+
+
+/* ========================  320  ======================== */
+
+@media screen and (min-width: 320px){
+    
+}
+
+
+/* ========================  768  ======================== */
+
+@media screen and (min-width: 768px){
+    .container {
+        
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+    .section-two{
+        padding-top: 50px;
+        padding-right: 50px;
+    }
+
+    .benefits-list {
+        gap: 44px 88px;
+    }
+
+    .benefits-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+}
+
+/* ======================== 1158 ======================== */
+
+@media screen and (min-width: 1158px){
+    .container {
+        max-width: 1166;
+        padding-left: 15px;
+        padding-right: 15px; 
+      }
+
+      .benefits-list {
+        gap: 88px;
+    }
+
+    .benefits-item {
+        flex-basis: calc((100% - 72px) / 3);
+    }
+
+
+}
+
+
+
+
+
 
 
 
