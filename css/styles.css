@@ -893,7 +893,7 @@ header{
     }
 
     .benefits-item {
-        flex-basis: calc((100% - 24px) / 2);
+        flex-basis: calc((100% - 72px) / 3);
     }
 
 }
@@ -905,6 +905,7 @@ header{
         max-width: 1166;
         padding-left: 15px;
         padding-right: 15px; 
+        margin: 170px;
       }
 
       .benefits-list {
@@ -912,7 +913,7 @@ header{
     }
 
     .benefits-item {
-        flex-basis: calc((100% - 72px) / 3);
+        flex-basis: calc((100% - 72px) / 6);
     }
 
 
