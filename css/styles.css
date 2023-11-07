@@ -883,6 +883,19 @@ header{
         padding: 0 15px;
       }
 
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
     .section-two{
         padding-top: 50px;
         padding-right: 50px;
@@ -895,6 +908,7 @@ header{
     .benefits-item {
         flex-basis: calc((100% - 72px) / 3);
     }
+    
 
 }
 
@@ -905,8 +919,21 @@ header{
         max-width: 1166;
         padding-left: 15px;
         padding-right: 15px; 
-        margin: 170px;
+        margin: 170 auto;
       }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
       .benefits-list {
         gap: 88px;
