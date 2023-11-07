@@ -879,11 +879,11 @@ header{
         max-width: 768px;
         padding-left: 16px;
         padding-right: 16px;
-        margin: 0 auto;
+        margin: 16 auto;
         padding: 0 15px;
-      }
+    }
 
-      .visually-hidden {
+    .visually-hidden {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -896,13 +896,14 @@ header{
         overflow: hidden;
     }
 
-    .section-two{
+    /* .section-two{
         padding-top: 50px;
         padding-right: 50px;
-    }
+        margin: 0 auto;
+    } */
 
     .benefits-list {
-        gap: 44px 88px;
+        gap: 88px;
     }
 
     .benefits-item {
@@ -935,7 +936,7 @@ header{
         overflow: hidden;
     }
 
-      .benefits-list {
+    .benefits-list {
         gap: 88px;
     }
 
