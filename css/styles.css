@@ -90,7 +90,7 @@ body {
 }
 
 .mobile-open-btn-icon{
-    color: #2F2F37;
+    stroke: #2F2F37;
 
 }
 
@@ -138,3 +138,4 @@ body {
          width: 1158px;
     }
 }
+
