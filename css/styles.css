@@ -206,6 +206,13 @@ p {
     padding-bottom: 96px;
 }
 
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 .hero-section {
     margin: 0 auto;
     padding-top: 72px;
@@ -225,7 +232,7 @@ p {
     }
 }
 
-.section-title {
+.page-title {
     margin: 0 auto;
     margin-bottom: 72px;
     font-size: 36px;
@@ -259,8 +266,153 @@ p {
 /* ================== /SECTION ONE ================== */
 
 /* ================== SECTION TWO ================== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.benefit-item {
+    width: 100%;
+}
+
+.icon-container {
+    display: none;
+}
+
+.benefit {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-dark);
+}
+
+.benefit-text {
+    font-weight: 500;
+}
 
 /* ================== /SECTION TWO ================== */
+
+/* ================== SECTION THREE ================== */
+.master-section {
+    background-color: #f4f4fd;
+}
+
+.section-title {
+    color: var(--title-dark);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.master-section-title {
+    margin-bottom: 72px;
+}
+
+.masters-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.master-item {
+    text-align: center;
+    width: 264px;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--background-white);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.master-image{}
+
+.master-description{
+    padding: 32px 0;
+}
+
+.master {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--title-dark);
+}
+
+.master-position {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-button);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-button);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+    fill: #f4f4fd;
+}
+
+
+
+/* ================== /SECTION THREE ================== */
+
+
+/* ================== SECTION FOUR ================== */
+
+/* ================== /SECTION FOUR ================== */
 
 /* ========= mobile-menu =========*/
 
@@ -387,10 +539,7 @@ p {
     
 }
 
-
-
-
-/* ================== /HEAD MOBILE STYLES ================== */
+/* ========= mobile-menu =========*/
 
 
 
@@ -509,20 +658,61 @@ p {
         }
     }
 
-    .section-title {
+    .page-title {
         max-width: 496px;
         margin-bottom: 36px;
-        font-size: 56px;
+        font-size: 50px;
     }
 
         
     /* =========== /SECTION 1 TABLET STYLES =========== */
 
-    
+    /* =========== SECTION 2 TABLET STYLES =========== */
+    .benefits-list {
+        margin: 0 auto;
+        max-width: 768px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
 
+    .benefit-item {
+        max-width: 346px;
+    }
+
+    .benefit {
+        text-align: left;
+    }
+
+    .benefit-text {
+        font-weight: 500;
+    }
+    
+    /* =========== /SECTION 2 TABLET STYLES =========== */
+
+
+    /* =========== SECTION 3 TABLET STYLES =========== */
+    .masters-list {
+        width: 552px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+
+    /* =========== /SECTION 3 TABLET STYLES =========== */
+    
 }
 
 
+
+
+
+/* ===================== MEDIA 1158 ===================== */
 /* ===================== MEDIA 1158 ===================== */
 
 @media screen and (min-width: 1158px){
@@ -553,9 +743,84 @@ p {
 
     /* =========== SECTION 1 DESKTOP STYLES =========== */
 
+    
+    .hero-section {
+        max-width: 1158px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-color: var(--title-dark);
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/backgrounds/hero-section-background-desktop.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-resolution: 192dpi){
+        .hero-section {
+            background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/backgrounds/hero-section-background-desktop@2x.jpg);
+        }
+    }
+    
 
 
 
     /* =========== /SECTION 1 DESKTOP STYLES =========== */
+
+
+
+    /* =========== SECTION 2 DESKTOP STYLES =========== */
+    .section {
+        max-width: 1440px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .benefit-item {
+        max-width: 346px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        padding: 24px 100px;
+        border-radius: 4px;
+        background: #f4f4fd;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+    }
+
+    .benefit {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .benefit-text {
+        font-weight: 400;
+    }
+    /* =========== /SECTION 2 DESKTOP STYLES =========== */
+
+
+
+    /* =========== SECTION 3 DESKTOP STYLES =========== */
+    .masters-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    /* =========== /SECTION 3 DESKTOP STYLES =========== */
+
+    
+
+    /* =========== SECTION 4 DESKTOP STYLES =========== */
+
+    /* =========== /SECTION 4 DESKTOP STYLES =========== */
+
+
 }
 
