@@ -411,6 +411,46 @@ p {
 
 
 /* ================== SECTION FOUR ================== */
+.section-title {
+    color: var(--title-dark);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.portfolio-section-title {
+    margin-bottom: 72px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.portfolio-item {
+    width: 288px;
+    border: 1px solid #e7e9fc;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
 
 /* ================== /SECTION FOUR ================== */
 
