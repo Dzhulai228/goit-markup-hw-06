@@ -1245,7 +1245,7 @@ p {
 
     /* =========== SECTION 3 TABLET STYLES =========== */
     .masters-list {
-        width: 552px;
+        /* width: 552px; */
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -1268,7 +1268,7 @@ p {
     }
 
     .portfolio-item {
-        width: 356px;
+        width: 360px;
     }
     
         
@@ -1278,7 +1278,7 @@ p {
 
     /* =========== FOOTER TABLET STYLES =========== */
     .footer-container {
-        width: 584px;
+        /* width: 584px; */
         /* justify-content: center; */
         align-items: flex-start;
         flex-direction: row;
@@ -1419,7 +1419,7 @@ p {
         justify-content: center;
         align-items: center;
         height: 112px;
-        padding: 24px 100px;
+        /* padding: 24px 100px; */
         border-radius: 4px;
         background: #f4f4fd;
         border: 1px solid #8e8f99;
