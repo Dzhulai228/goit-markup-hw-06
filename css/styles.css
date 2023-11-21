@@ -756,6 +756,13 @@ p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-button:hover,
+.modal-close-button:focus{
+    background-color: #404bbf; 
+    border: none; 
+    fill: #ffffff;
+}
+
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -806,6 +813,10 @@ p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus{
+    border-color: #4D5AE5;
+}
+
 .form-input-icon {
     position: absolute;
     top: 50%;
@@ -815,6 +826,14 @@ p {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-icon:focus{
+    fill: #4D5AE5; 
+}
+
+.form-input:focus + .form-input-icon{
+    fill: #4D5AE5; 
 }
 
 .form-textarea-container {
