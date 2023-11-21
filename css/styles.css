@@ -175,8 +175,8 @@ p {
     display: none;
 }
 
-.color-logo{
-    color: #2E2F42;
+.logo-accent {
+    color: var(--logo-primary);
 }
 
 .mobile-open-btn{
@@ -1086,10 +1086,6 @@ p {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }       
 
-    .home-page {
-        color: #404bbf;
-    }
-
     .header-address {
         display: flex;
         flex-direction: column;
@@ -1110,6 +1106,34 @@ p {
 
     .mobile-open-btn{
         display: none;
+    }
+
+
+    /* ==== */
+    .navigation-link {
+        position: relative;
+        display: block;
+        padding: 24px 0;
+        color: var(--navigation-link-primary);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .home-page {
+        color: #404bbf;
+    }
+    
+    .home-page::after {
+        content: "";
+        position: absolute;
+        display: block;
+        margin-top: 20px;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--navigation-link-hover);
     }
 
 
